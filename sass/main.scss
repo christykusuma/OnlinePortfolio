@@ -1,0 +1,75 @@
+@import "abstracts/variables";
+
+@import "pages/header";
+@import "pages/about";
+@import "pages/projects";
+@import "pages/resume";
+@import "pages/contact";
+
+// Reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $black;
+	font-family: $font;
+	font-size: 1.2em;
+	color: white;
+	margin-top: 20px;
+}
+
+// .header-img {
+// 	width: 100%;
+// 	max-width: 1190px;
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, 0%);
+// 	z-index: -1;
+// }
+
+.container {
+	position: relative;
+	.animate-nav li {
+		transition: width 2s linear 1s;
+		display: inline-block;
+		z-index: 3;
+	}
+
+	li.animate-nav-color {
+		color: purple;
+	}
+	li.animate-nav-color .second-nav {
+		color: yellow;
+    }
+	h1 {
+		margin-top: 100px;
+		font-size: 2.5em;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgb(111, 167, 231);
+		letter-spacing: 20px;
+	}
+}
+
+.navigation {
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 300px;
+    left: -185px;
+    z-index: 100;
+    li {
+        text-transform: uppercase;
+        list-style-type: none;
+        letter-spacing: 5px;
+        display: none;
+    }
+    a, a:hover {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

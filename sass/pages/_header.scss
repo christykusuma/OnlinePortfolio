@@ -1,0 +1,36 @@
+// Home page
+.header {
+	position: relative;
+	text-align: center;
+	height: 95vh;
+	background: url(../img/background.png) fixed;
+	background-size: cover;
+	background-position: center;
+	&__nav {
+		z-index: 1;
+		position: absolute;
+		bottom: 0;
+	}
+	li {
+		text-transform: uppercase;
+		list-style-type: none;
+		letter-spacing: 5px;
+		display: inline-block;
+		margin: auto 10px;
+		padding: 10px;
+	}
+	a {
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	&__job-title {
+		position: absolute;
+		top: 0;
+		right: 0;
+		letter-spacing: 5px;
+		margin: auto 10px;
+		text-transform: uppercase;
+	}
+}

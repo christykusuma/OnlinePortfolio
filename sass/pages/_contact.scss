@@ -1,0 +1,39 @@
+// Contact section
+.contact {
+	width: 100%;
+	height: 800px;
+	background: url(../img/contact.jpg) fixed;
+	background-size: cover;
+	position: relative;
+	background-position: top;
+	text-align: center;
+	h1 {
+		padding-top: 80px;
+		color: #b6ffd1;
+	}
+	.contact-form {
+		background-color: rgba(0,0,0,0.7);
+		height: 400px;
+		width: 500px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		.contact-details {
+			text-align: left;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			.label {
+				vertical-align: top;
+				padding-right: 15px;
+			}
+			input {
+				height: 25px;
+				width: 200px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}	

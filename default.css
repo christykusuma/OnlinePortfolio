@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #010101;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 20px; }
+
+.header {
+  position: relative;
+  text-align: center;
+  height: 95vh;
+  background: url(./imgs/background.png) fixed;
+  background-size: cover;
+  background-position: center; }
+  .header .nav {
+    z-index: 1;
+    position: absolute;
+    bottom: 0; }
+  .header li {
+    text-transform: uppercase;
+    list-style-type: none;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin: auto 10px;
+    padding: 10px; }
+  .header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; }
+  .header .job {
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: 5px;
+    margin: auto 10px;
+    text-transform: uppercase; }
+
+.container {
+  position: relative; }
+  .container .container-nav {
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 300px;
+    left: -185px;
+    z-index: 100; }
+    .container .container-nav li {
+      text-transform: uppercase;
+      list-style-type: none;
+      letter-spacing: 5px;
+      display: none; }
+    .container .container-nav a, .container .container-nav a:hover {
+      color: inherit;
+      font-weight: bold;
+      text-decoration: none; }
+  .container .animate-nav li {
+    transition: width 2s linear 1s;
+    display: inline-block;
+    z-index: 3; }
+  .container li.animate-nav-color {
+    color: purple; }
+  .container li.animate-nav-color .second-nav {
+    color: yellow; }
+  .container .about {
+    width: 100%;
+    height: 600px;
+    position: relative; }
+    .container .about .christy-pic {
+      position: absolute;
+      width: 22%;
+      max-height: 500px;
+      top: 140px;
+      left: 18%; }
+    .container .about .description {
+      top: 160px;
+      left: 43%;
+      width: 38%;
+      height: 200px;
+      position: absolute;
+      line-height: 36px;
+      font-size: 90%; }
+  .container h1 {
+    margin-top: 100px;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6fa7e7;
+    letter-spacing: 20px; }
+
+.projects {
+  width: 100%;
+  height: 900px;
+  background: url(./imgs/background2.jpg) fixed;
+  background-size: cover;
+  position: relative;
+  background-position: bottom;
+  /* Slideshow container */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
+  .projects h1 {
+    padding-top: 80px;
+    color: hotpink; }
+  .projects .slideshow-container {
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    z-index: 9; }
+    .projects .slideshow-container img {
+      height: 450px; }
+  .projects .mySlides {
+    display: none; }
+  .projects .prev, .projects .next {
+    cursor: pointer;
+    position: absolute;
+    top: 120%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0; }
+  .projects .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .projects .prev:hover, .projects .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .projects .text {
+    color: #f2f2f2;
+    font-size: 28px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -160%;
+    width: 100%;
+    text-align: center; }
+  .projects .text-content {
+    color: #f2f2f2;
+    font-size: 17px;
+    padding: 8px 0px;
+    padding-left: 40px;
+    position: absolute;
+    bottom: -195%;
+    width: 95%;
+    text-align: left; }
+  .projects .text-built {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 0px;
+    padding-left: 40px;
+    position: absolute;
+    bottom: -210%;
+    width: 95%;
+    text-align: right; }
+  .projects .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; }
+  .projects .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .projects .active, .projects .dot:hover {
+    background-color: #717171; }
+  .projects .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.resume {
+  width: 100%;
+  height: 700px;
+  position: relative; }
+  .resume h1 {
+    color: #f8c867; }
+  .resume .lightbulb-pic {
+    position: absolute;
+    right: 100px;
+    width: 400px; }
+
+.contact {
+  width: 100%;
+  height: 800px;
+  background: url(./imgs/contact.jpg) fixed;
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  text-align: center; }
+  .contact h1 {
+    padding-top: 80px;
+    color: #b6ffd1; }
+  .contact .contact-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .contact .contact-form .contact-details {
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .contact .contact-form .contact-details .label {
+        vertical-align: top;
+        padding-right: 15px; }
+      .contact .contact-form .contact-details input {
+        height: 25px;
+        width: 200px;
+        margin-bottom: 8px; }

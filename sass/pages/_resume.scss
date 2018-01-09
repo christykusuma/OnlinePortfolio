@@ -1,0 +1,14 @@
+// Resume section
+.resume {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	h1 {
+		color: #f8c867;
+	}
+	&__photo {
+		position: absolute;
+		right: 100px;
+		width: 400px;
+	}	
+}
