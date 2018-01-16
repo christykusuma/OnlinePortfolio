@@ -12,10 +12,11 @@
 	/* Slideshow container */
 	.slideshow-container {
 		width: 65%;
+		width: 850px;
 		height: 200px;
 		position: absolute;
 		top: 50%;
-		left: 50%;
+		left: 50.2%;
 		transform: translate(-50%, -120%);
 		z-index: 9;
 		img {
@@ -55,11 +56,12 @@
 	
 	/* Caption text */
 	.text {
+		display: none;
 		color: #f2f2f2;
 		font-size: 28px;
 		padding: 8px 12px;
 		position: absolute;
-		bottom: -160%;
+		bottom: -180%;
 		width: 100%;
 		text-align: center;
 	}
@@ -70,7 +72,7 @@
 		padding: 0px 0px;
 		padding-left: 40px;
 		position: absolute;
-		bottom: -180%;
+		bottom: -175%;
 		width: 95%;
 		text-align: center;			
 	}
@@ -80,7 +82,7 @@
 		padding: 8px 0px;
 		padding-left: 40px;
 		position: absolute;
-		bottom: -210%;
+		bottom: -200%;
 		width: 95%;
 		text-align: right;			
 	}
@@ -129,7 +131,7 @@
 	}	
 
 	/* The Modal (background) */
-	.modal {
+	#myModal {
 		display: none; /* Hidden by default */
 		position: fixed; /* Stay in place */
 		z-index: 10; /* Sit on top */
@@ -166,10 +168,29 @@
 			font-weight: bold;
 		}
 	}
+
+	.modal-content-1, .modal-content-2, .modal-content-3, .modal-content-4, .modal-content-5, .modal-content-6 {
+		display: none;
+	}
+
+	.open-modal {
+		border: black 10px solid;
+		padding: 5px;
+		background-color: #0f030f;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 5px;
+		font-weight: bold;
+	}
+	.open-modal:hover {
+		border: black 10px solid;
+		background-color: #4f1745;
+	}
+
 	.modal-info{
 		height: 300px;
 		display: inline-block;
-		background-color: yellow;
 	}
 	
 	.modal-block {
@@ -190,3 +211,115 @@
 		text-decoration: none;
 		cursor: pointer;
 	}
+
+@media screen and (max-width: 1100px) {
+	.projects {
+		/* Slideshow container */
+		.slideshow-container {
+			width: 70vw;
+			height: 80px;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -120%);
+			img {
+				height: 400px;
+			}
+		}	
+		/* Next & previous buttons */
+		.prev, .next {
+			top: 250%;
+			}
+		/* Caption text */
+		.text {
+			bottom: -380%;
+			width: 100%;
+		}
+
+		.text-content {
+			bottom: -530%;	
+		}
+		.text-built {
+			bottom: -600%;	
+		}
+	}
+}
+
+@media screen and (max-width: 587px) {
+	.projects {
+		font-size: 1rem;
+		height: 650px;
+		background-size: auto 85vh;
+		background-position: top;
+		h1 {
+			padding-top: 60px;
+		}
+		/* Slideshow container */
+		.slideshow-container {
+			width: 90%;
+			height: 80px;
+			top: 38%;
+			left: 50%;
+			transform: translate(-50%, -120%);
+			img {
+				height: 320px;
+			}
+		}	
+		/* Next & previous buttons */
+		.prev, .next {
+			top: 210%;
+			width: auto;
+			margin-top: -22px;
+		}
+		/* Caption text */
+		.text {
+			display: none;
+			font-size: 28px;
+			padding: 8px 12px;
+			bottom: -380%;
+			width: 100%;
+		}
+
+		.text-content {
+			display: none;
+			font-size: 17px;
+			bottom: -390%;
+			width: 90%;		
+		}
+		.text-built {
+			font-size: 15px;
+			padding-left: 40px;
+			bottom: -430%;	
+		}
+	}
+}
+
+// iPhone 7
+@media screen and (max-width: 375px) {
+	.projects {
+		margin-left: 10px;
+		width: 102vw;
+		height: 620px;
+		/* Next & previous buttons */
+		.prev, .next {
+			top: 150%;
+		}
+		/* Caption text */
+		.text-content {
+			display: block;
+			font-size: 18px;
+			top: 360%;
+			text-align: left;
+		}
+		/* Slideshow container */
+		.slideshow-container {
+			top: 42%;
+			img {
+				height: 220px;
+			}
+		}
+		.text-built {
+			font-size: 11px;
+			bottom: -410%;	
+		}	
+	}
+}

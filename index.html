@@ -4,8 +4,10 @@
 	<title>Christy Kusuma</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
 	<!-- <meta http-equiv="refresh" content="3" > -->
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
 	<script src="jquery-3.2.1.min.js"></script>
 	<script src="main.js"></script>
 </head>
@@ -16,7 +18,7 @@
 			<ul>
 				<li><a href="#about">About</a></li> | 
 				<li><a href="#projects">Projects</a></li> |
-				<li><a href="#resume">Resume</a></li> |
+				<li><a href="#resume">Experience</a></li> |
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -31,7 +33,7 @@
 					<li>|</li> 
 					<li class="navigation__item--2"><a href="#projects">Projects</a></li> 
 					<li>|</li> 
-					<li class="navigation__item--3"><a href="#resume">Resume</a></li> 
+					<li class="navigation__item--3"><a href="#resume">Experience</a></li> 
 					<li>|</li> 
 					<li class="navigation__item--4"><a href="#contact">Contact</a></li>
 				</ul>
@@ -42,6 +44,7 @@
 			<div class="about">
 				<h1>About Me</h1>
 				<img class="about__photo" src="img/christy.png">
+				<img class="about__photo--cropped" src="img/christy-cropped.png">
 				<p class="about__description">
 					Hi, my name is Christy Kusuma and I love learning new things. In the past, I’ve helped multiple ventures as a PR specialist and worked with two venture accelerators at Boston University. I discovered my love for web development while in college and graduated with a cum laude in PR/Advertising and a CAS concentration in Computer Science. I decided to graduate a year early and complement my education by enrolling in a development intensive at New York Code + Design Academy. Currently, I’m looking for a front-end or full stack web development position so I can bring my breadth of experience to bear - creating beautiful intuitive products that the artist in me would be proud of.
 				</p>
@@ -54,14 +57,14 @@
 			
 			<!-- Modals -->
 			<!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
+			<!-- <button id="myBtn">Open Modal</button> -->
 
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 
 				<!-- LDRunner Modal content -->
-				<!-- <div class="modal-content">
-					<span class="close">&times;</span>
+				<div class="modal-content" id="modal-content-1">
+					<span class="close close-1">&times;</span>
 					<div style="color: black;">
 						<h3>LDRunner</h3>
 						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
@@ -72,11 +75,30 @@
 						<a href="img/ldrunner-2.png" ><img src="img/ldrunner-2.png" class="modal-block"></a>
 						<a href="img/ldrunner-3.png" ><img src="img/ldrunner-3.png" class="modal-block"></a>
 					</div>
-				</div> -->
+				</div>
+
+				<!-- LastCall Modal content -->
+				<div class="modal-content" id="modal-content-2">
+					<span class="close close-2">&times;</span>
+					<div style="color: black;">
+						<h3>LastCall</h3>
+						
+						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
+							This is a discounted food delivery app for surplus food. Restaurant owners can create restaurant profiles and keep track of orders, as well as change menu items. Customers can search for restaurants, see their menu, and have food delivered to them through Postmates. <br><br>
+							Feel free to play around with the <a target="_blank" href="https://lastcall-final.herokuapp.com/" style="color: purple;">demo</a> or click the image to enlarge it. 
+						</div>
+						<a href="img/lastcall-1.png" ><img src="img/lastcall-1.png" class="modal-block"></a>
+						<a href="img/lastcall-2.png" ><img src="img/lastcall-2.png" class="modal-block"></a>
+						<a href="img/lastcall-3.png" ><img src="img/lastcall-3.png" class="modal-block"></a>
+						<a href="img/lastcall-4.png" ><img src="img/lastcall-4.png" class="modal-block"></a>
+						<a href="img/lastcall-5.png" ><img src="img/lastcall-5.png" class="modal-block"></a>
+						<a href="img/lastcall-6.png" ><img src="img/lastcall-6.png" class="modal-block"></a>
+					</div>
+				</div>
 
 				<!-- Wanderlust Modal content -->
-				<!-- <div class="modal-content">
-					<span class="close">&times;</span>
+				<div class="modal-content" id="modal-content-3">
+					<span class="close close-3">&times;</span>
 					<div style="color: black;">
 						<h3>Wanderlust</h3>
 						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
@@ -87,11 +109,11 @@
 						<a href="img/wanderlust-2.png" ><img src="img/wanderlust-2.png" class="modal-block"></a>
 						<a href="img/wanderlust-3.png" ><img src="img/wanderlust-3.png" class="modal-block"></a>
 					</div>
-				</div> -->
+				</div>
 
 				<!-- FiDi Restaurants Modal content -->
-				<!-- <div class="modal-content">
-					<span class="close">&times;</span>
+				<div class="modal-content" id="modal-content-4">
+					<span class="close close-4">&times;</span>
 					<div style="color: black;">
 						<h3>FiDi Restaurants</h3>
 						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
@@ -102,71 +124,100 @@
 						<a href="img/fidi-2.png" ><img src="img/fidi-2.png" class="modal-block"></a>
 						<a href="img/fidi-3.png" ><img src="img/fidi-3.png" class="modal-block"></a>
 					</div>
-				</div> -->
+				</div>
 
 				<!-- AdventureTime Game Modal content -->
-				<!-- <div class="modal-content">
-					<span class="close">&times;</span>
+				<div class="modal-content" id="modal-content-5">
+					<span class="close close-5">&times;</span>
 					<div style="color: black;">
 						<h3>Adventure Time Game</h3>
 						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
 							Help Finn beat the Ice King by shooting miniature versions of Jake the dog at him. Watch out for the ice blasts! A new batch of Ice Kings will come in to replace the ones that have been killed and scores will be counted. Use the arrow keys to move around and the space bar to shoot.<br><br>
-							Feel free to play around with the <a target="_blank" href="https://fidi-restaurants.herokuapp.com/" style="color: orange;">demo</a> or click the image to enlarge it. 
+							Feel free to play around with the <a target="_blank" href="http://christykusuma.com/game/" style="color: orange;">demo</a> or click the image to enlarge it. 
 						</div>
-						<a href="img/fidi-1.png" ><img src="img/fidi-1.png" class="modal-block"></a>
-						<a href="img/fidi-2.png" ><img src="img/fidi-2.png" class="modal-block"></a>
-						<a href="img/fidi-3.png" ><img src="img/fidi-3.png" class="modal-block"></a>
+						<a href="img/game-1.png" ><img src="img/game-1.png" class="modal-block"></a>
+						<a href="img/game-2.png" ><img src="img/game-2.png" class="modal-block"></a>
+						<a href="img/game-3.png" ><img height="300px" src="img/game-3.png" class="modal-block"></a>
 					</div>
-				</div> -->
+				</div>
+
+				<!-- SoundCloud Jukebox Modal content -->
+				<div class="modal-content" id="modal-content-6">
+					<span class="close close-6">&times;</span>
+					<div style="color: black;">
+						<h3>SoundCloud Jukebox</h3>
+						<div class="modal-info modal-block" style="width: 515px; margin-left: 2%; padding: 20px;">
+							This app allows users to add any public SoundCloud playlist or song into the jukebox. Simply submit the link to a playlist or song from the SoundCloud website and you're good to go!<br><br>
+							Feel free to play around with the <a target="_blank" href="http://christykusuma.com/soundcloud/" style="color: #bea098;">demo</a> or click the image to enlarge it. 
+						</div>
+						<a href="img/soundcloud-1.png" ><img src="img/soundcloud-1.png" class="modal-block"></a>
+						<a href="img/soundcloud-2.png" ><img height="300px" src="img/soundcloud-2.png" class="modal-block"></a>
+						<a href="img/soundcloud-3.png" ><img height="300px" src="img/soundcloud-3.png" class="modal-block"></a>
+					</div>
+				</div>
 
 			</div>
 
 			<div class="slideshow-container">
-					<div id="open-modal-1" class="mySlides fade" style="display: block;">
-						<div class="numbertext">1 / 5</div>
+					<div class="mySlides fade" style="display: block;">
+						<div class="numbertext">1 / 6</div>
 						<img src="img/ldrunner.jpg" style="width:100%">
+						<!-- <div class="pre-modal-1"></div> -->
 						<div class="text">LDRunner</div>
+						<div id="open-modal-1" class="open-modal">View Project Details</div>
 						<div class="text-content">
-							The ultimate race tool for long-distance runners.
+							The ultimate race tracking tool for long-distance runners -- 5K, 10K, Half Marathon, Marathon.
 						</div>
 						<div class="text-built">Built with: HTML/SASS, SQL, multiple APIs, and Ruby on Rails.</div>
 					</div>
 					<div id="open-modal-2" class="mySlides fade">
-						<div class="numbertext">2 / 5</div>
-						<img src="img/fidi_restaurants.jpg" style="width:100%">
-						<div class="text">FiDi Restaurants</div>
+						<div class="numbertext">2 / 6</div>
+						<img src="img/lastcall-1.png" style="width:100%">
+						<div class="text">LastCall</div>
+						<div id="open-modal-2" class="open-modal">View Project Details</div>
 						<div class="text-content">
-							Helping New Yorkers keep track of restaurants in the Financial District area.
+							A food delivery application that serves surplus food items at a discounted price.
 						</div>
-						<div class="text-built">Built with: HTML/CSS, SQL and Ruby Sinatra.</div>
-					</div>
-					
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 5</div>
+						<div class="text-built">Built with: HTML/SASS, SQL, multiple APIs, and Ruby on Rails.</div>
+					</div>					
+					<div id="open-modal-3" class="mySlides fade">
+						<div class="numbertext">3 / 6</div>
 						<img src="img/wanderlust.jpg" style="width:100%">
 						<div class="text">Wanderlust</div>
+						<div id="open-modal-3" class="open-modal">View Project Details</div>
 						<div class="text-content">
 							Helping people keep track of all their favorite places around the world and create a wishlist of places to go!
 						</div>
-						<div class="text-built">Built with: React/Redux, CSS3/SASS, MongoDB, Node, Express, Passport, Axios and multiple APIs.</div>
+						<div class="text-built">Built with: React/Redux, CSS3/SASS, MongoDB, Node, and Express.</div>
 					</div>
-					
-					<div class="mySlides fade">
-						<div class="numbertext">4 / 5</div>
+					<div id="open-modal-4" class="mySlides fade">
+						<div class="numbertext">4 / 6</div>
+						<img src="img/fidi_restaurants.jpg" style="width:100%">
+						<div class="text">FiDi Restaurants</div>
+						<div id="open-modal-4" class="open-modal">View Project Details</div>
+						<div class="text-content">
+							Helping New York workers keep track of restaurants in the Financial District area during their lunch breaks.
+						</div>
+						<div class="text-built">Built with: HTML/CSS, SQL and Ruby Sinatra.</div>
+					</div>
+					<div id="open-modal-5" class="mySlides fade">
+						<div class="numbertext">5 / 6</div>
 						<img src="img/game.jpg" style="width:100%">
 						<div class="text">Adventure Time Game</div>
+						<div id="open-modal-5" class="open-modal">View Project Details</div>
 						<div class="text-content">
-							An Adventure Time themed game to help Finn shoot Jake at the Ice King.
+							An Adventure Time-themed game to help Finn shoot Jake at the Ice King.
 						</div>
 						<div class="text-built">Built with: HTML5/CSS3 and Javascript.</div>
 					</div>
 
-					<div class="mySlides fade">
-						<div class="numbertext">5 / 5</div>
+					<div id="open-modal-6" class="mySlides fade">
+						<div class="numbertext">6 / 6</div>
 						<img src="img/soundcloud.jpg" style="width:100%">
 						<div class="text">SoundCloud Jukebox</div>
+						<div id="open-modal-6" class="open-modal">View Project Details</div>
 						<div class="text-content">
-							A jukebox that can be used for any SoundCloud playlist or song.
+							A jukebox that can be used for any public SoundCloud playlist or song.
 						</div>
 						<div class="text-built">Built with: HTML/CSS, SoundCloud API and Javascript.</div>
 					</div>
@@ -182,13 +233,43 @@
 					<span class="dot" onclick="currentSlide(3)"></span> 
 					<span class="dot" onclick="currentSlide(4)"></span> 
 					<span class="dot" onclick="currentSlide(5)"></span> 
+					<span class="dot" onclick="currentSlide(6)"></span> 
 				</div>
 			</div>
 
 			<!-- Resume section -->
 			<a name="resume"></a>
-			<div class="resume">
-				<h1>Resume</h1>
+			<div class="resume" >
+				<h1>Experience</h1>
+				<img class="resume__skills" src="img/skills.png">
+				<div>
+					<div class="resume__button github">
+							<a href="https://github.com/christykusuma" target="_blank"><span class="resume__button--add" style="padding: 0px 5px;">
+								+
+							</span></a>
+							<span class="resume__button--content">
+								GitHub
+							</span>
+						</div>
+						<div class="resume__button linkedin">
+							<a href="https://www.linkedin.com/in/christykusuma/" target="_blank"><span class="resume__button--add" style="padding: 0px 5px;">
+								+
+							</span></a>
+							<span class="resume__button--content">
+								LinkedIn
+							</span>
+						</div>
+						<div class="resume__button resume">
+							<a href="http://christykusuma.com/resume.pdf" target="_blank"><span class="resume__button--add" style="padding: 0px 5px;">
+								+
+							</span></a>
+							<span class="resume__button--content">
+								Resume
+							</span>
+						</div>
+						
+
+				</div>
 				<!-- <img class="resume__photo" src="img/lightbulb.png"> -->
 			</div>
 
@@ -196,7 +277,7 @@
 			<a name="contact"></a>
 			<div class="contact">
 				<h1>Contact Me</h1>
-				<form class="contact-form" method="POST" action="contact.php">
+				<form class="contact-form" method="POST" action="https://formspree.io/christykusuma17@gmail.com">
 					<table class="contact-details">
 						<tr>
 							<td class="label">Name</td>
@@ -229,5 +310,120 @@
 					
 			</div>
 	</div>
+
+<script>
+	// Modal section (didn't work in the js file)
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image that opens the modal
+	var openModal1 = document.getElementById("open-modal-1");
+	var openModal2 = document.getElementById("open-modal-2");
+	var openModal3 = document.getElementById("open-modal-3");
+	var openModal4 = document.getElementById("open-modal-4");
+	var openModal5 = document.getElementById("open-modal-5");
+	var openModal6 = document.getElementById("open-modal-6");
+
+	// Get the right modal content 
+	var modalContent1 = document.getElementById('modal-content-1');
+	var modalContent2 = document.getElementById('modal-content-2');
+	var modalContent3 = document.getElementById('modal-content-3');
+	var modalContent4 = document.getElementById('modal-content-4');
+	var modalContent5 = document.getElementById('modal-content-5');
+	var modalContent6 = document.getElementById('modal-content-6');
+	
+	// Get the <span> element that closes the modal
+	var span1 = document.getElementsByClassName("close-1")[0];
+	var span2 = document.getElementsByClassName("close-2")[0];
+	var span3 = document.getElementsByClassName("close-3")[0];
+	var span4 = document.getElementsByClassName("close-4")[0];
+	var span5 = document.getElementsByClassName("close-5")[0];
+	var span6 = document.getElementsByClassName("close-6")[0];
+
+
+	// When the user clicks on the button, open the modal 
+	openModal1.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "block";
+		modalContent2.style.display = "none";
+		modalContent3.style.display = "none";
+		modalContent4.style.display = "none";
+		modalContent5.style.display = "none";
+		modalContent6.style.display = "none";
+	}
+	openModal2.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "none";
+		modalContent2.style.display = "block";
+		modalContent3.style.display = "none";
+		modalContent4.style.display = "none";
+		modalContent5.style.display = "none";
+		modalContent6.style.display = "none";
+	}
+	openModal3.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "none";
+		modalContent2.style.display = "none";
+		modalContent3.style.display = "block";
+		modalContent4.style.display = "none";
+		modalContent5.style.display = "none";
+		modalContent6.style.display = "none";
+	}
+	openModal4.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "none";
+		modalContent2.style.display = "none";
+		modalContent3.style.display = "none";
+		modalContent4.style.display = "block";
+		modalContent5.style.display = "none";
+		modalContent6.style.display = "none";
+	}
+	openModal5.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "none";
+		modalContent2.style.display = "none";
+		modalContent3.style.display = "none";
+		modalContent4.style.display = "none";
+		modalContent5.style.display = "block";
+		modalContent6.style.display = "none";
+	}
+	openModal6.onclick = function() {
+		modal.style.display = "block";
+		modalContent1.style.display = "none";
+		modalContent2.style.display = "none";
+		modalContent3.style.display = "none";
+		modalContent4.style.display = "none";
+		modalContent5.style.display = "none";
+		modalContent6.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span1.onclick = function() {
+		modal.style.display = "none";
+	}
+	span2.onclick = function() {
+		modal.style.display = "none";
+	}
+	span3.onclick = function() {
+		modal.style.display = "none";
+	}
+	span4.onclick = function() {
+		modal.style.display = "none";
+	}
+	span5.onclick = function() {
+		modal.style.display = "none";
+	}
+	span6.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+
 </body>
 </html>

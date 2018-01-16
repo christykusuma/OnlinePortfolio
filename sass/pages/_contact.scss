@@ -18,7 +18,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-52%, -50%);
 		.contact-details {
 			text-align: left;
 			position: absolute;
@@ -37,3 +37,27 @@
 		}
 	}
 }	
+
+@media screen and (max-width: 587px) {
+	.contact {
+		font-size: 1rem;
+		height: 75vh;
+		background-size: auto 100vh;
+		background-position: top;
+		.contact-form {
+			height: 300px;
+			width: 450px;
+		}
+	}
+}
+
+// iPhone 7
+@media screen and (max-width: 375px) {
+	.contact {
+		margin-left: 10px;
+		width: 102vw;
+		.contact-form {
+			top: 60%;
+		}
+	}
+}

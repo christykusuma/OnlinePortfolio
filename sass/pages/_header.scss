@@ -34,3 +34,35 @@
 		text-transform: uppercase;
 	}
 }
+
+@media screen and (max-width: 587px) {
+	.header {
+		margin-top: -17px;
+		height: 60vh;
+		background-size: auto 60vh;
+		background-position: top;
+		font-size: 1rem;
+		li {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+// iPhone 7
+@media screen and (max-width: 375px) {
+	.header {
+		margin-top: -10px;
+		margin-left: 10px;
+		height: 95vh;
+		width: 102vw;
+		background-size: auto 100vh;
+		background-position: top;
+		font-size: 1rem;
+		li {
+			font-size: 0.8rem;
+			letter-spacing: 2px;
+			margin: 0;
+			padding: auto 3px;
+		}
+	}
+}

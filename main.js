@@ -8,17 +8,26 @@ $(document).ready(function() {
             $('.navigation__item--1').addClass('animate-nav-color');
             $('.navigation__item--2').removeClass('animate-nav-color');
             $('.navigation__item--3').removeClass('animate-nav-color');
+            $('.navigation__item--4').removeClass('animate-nav-color');
         } 
         if (y >= 1100) {
             $('.navigation__item--2').addClass('animate-nav-color');
-            $('.navigation__item--1').removeClass('animate-nav-color');
             $('.navigation__item--3').removeClass('animate-nav-color');
+            $('.navigation__item--4').removeClass('animate-nav-color');
+            $('.navigation__item--1').removeClass('animate-nav-color');
             
         } 
         if (y >= 2200) {
             $('.navigation__item--3').addClass('animate-nav-color');
-            $('.navigation__item--2').removeClass('animate-nav-color');
+            $('.navigation__item--4').removeClass('animate-nav-color');
             $('.navigation__item--1').removeClass('animate-nav-color');
+            $('.navigation__item--2').removeClass('animate-nav-color');
+        }
+        if (y >= 3000) {
+            $('.navigation__item--4').addClass('animate-nav-color');
+            $('.navigation__item--1').removeClass('animate-nav-color');
+            $('.navigation__item--2').removeClass('animate-nav-color');
+            $('.navigation__item--3').removeClass('animate-nav-color');
         }
         if (y < 770) {
             $('.navigation').removeClass('animate-nav');
@@ -59,13 +68,13 @@ function showSlides(n) {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var modal1 = document.getElementById("open-modal-1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
+modal1.onclick = function() {
     modal.style.display = "block";
 }
 

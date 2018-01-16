@@ -1,7 +1,7 @@
 // Resume section
 .resume {
 	width: 100%;
-	height: 700px;
+	height: 650px;
 	position: relative;
 	h1 {
 		color: #f8c867;
@@ -11,4 +11,99 @@
 		right: 100px;
 		width: 400px;
 	}	
+	&__skills {
+		width: 70vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -42%);
+	}
+	&__button {
+		width: 21%;
+		height: 80px;
+		padding: 15px 20px;
+		background-color: #0f030f;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 8px;
+		font-size: 1.5rem;
+	}
+	&__button--add {
+		display: inline-block;
+		padding: -5px 0px;
+		background-color: #1f061d;
+		width: 50px;
+		height: 50px;
+		font-size: 3rem;
+		color: #0f030f;
+		font-weight: bold;
+	}
+	&__button--content {
+		margin-top: -20px;
+	}
+	&__button--add:hover {
+		background-color: #4f1745;
+	}
+	.resume {
+		position: absolute;
+		top: 60%;
+		right: 20%;
+	}
+	.github {
+		position: absolute;
+		top: 30%;
+		right: 20%;
+	}
+	.linkedin {
+		position: absolute;
+		top: 45%;
+		right: 20%;
+	}
+}
+
+@media screen and (max-width: 587px) {
+	.resume {
+		font-size: 1rem;
+		height: 50vh;
+		&__skills {
+			display: none;
+		}	
+		&__button {
+			width: 70%;
+			height: 80px;
+			padding: 15px 20px;
+			font-size: 1.3rem;
+		}
+		.resume {
+			top: 70%;
+			left: 15%;
+		}
+		.github {
+			top: 20%;
+			left: 15%;
+		}
+		.linkedin {
+			top: 45%;
+			left: 15%;
+		}
+	}
+}
+
+// iPhone 7
+@media screen and (max-width: 375px) {
+	.resume {
+		margin-left: 5%;
+		.resume {
+			top: 76%;
+			left: 10%;
+		}
+		.github {
+			top: 20%;
+			left: 15%;
+		}
+		.linkedin {
+			top: 48%;
+			left: 15%;
+		}
+	}
 }
